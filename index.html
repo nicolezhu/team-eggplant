@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Engine</title>
+	</head>
+
+
+	<body>
+		<header>
+			<h1 align="center">FOOD ENGINE</h1>
+			<h5 align="center">anything you want to put here</h5>
+		</header>
+		<nav>            
+			<form id="IngredientsInput">
+				<h3>Ingredients</h3>
+				<ul id="IngredientsList">
+				<li>tomato</li>
+				<li>potato</li>
+				</ul>
+				<input type="text" name="AddIngredients" value="">
+				<button id="button" onclick="">Add Ingredients</button>
+			</form>
+			<div id="FilterBy">
+				<h3>Filter by:</h3>
+				<h4>Diet:</h4>
+				<select>
+			 	<option value="None" onclick="">None</option>
+  				<option value="Diet1" onclick="">Diet1</option>
+  				<option value="Diet2" onclick="">Diet2</option>
+  				<option value="Diet3" onclick="">Diet3</option>
+				</select>
+				<h4>Calories:</h4>
+				<input type="range" id="weight" min=10 value=10 max=2000 step=100 onchange="">
+				<output id="selectedcals">fewer than 150</output>
+			</div>
+		</nav>
+		<article>
+			<div id="calendar" align="center">  
+				<table border=3 cellpadding=20 cellspacing=3>
+					<tr>
+					<td colspan="17" align="center">March</td>
+					<tr> 
+					<td align="center"></td>
+					<td align="center">Sun</td>
+					<td align="center">Mon</td>
+					<td align="center">Tue</td>
+					<td align="center">Wed</td>
+					<td align="center">Thurs</td>
+					<td align="center">Fri</td>
+					<td align="center">Sat</td>
+					</tr>
+					<tr> 
+					<td align="left"></td>
+					<td align="left">1</td>
+					<td align="left">2</td>
+					<td align="left">3</td>
+					<td align="left">4</td>
+					<td align="left">5</td>
+					<td align="left">6</td>
+					<td align="left">7</td>
+					</tr>
+					<tr> 
+					<td align="left">Breakfast</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					</tr>
+					<tr> 
+					<td align="left">Lunch</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					</tr>
+					<tr> 
+					<td align="left">Dinner</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					</tr>
+				</table>
+			</div>
+			<div id="results">
+				<h2 align="center">Results:</h2>
+				<div id="meal1"> </div>
+				<div id="meal2"> </div>
+				<div id="meal3"> </div>
+			</div>
+		</article>
+		<footer>
+		</footer>
+	</body>
+</html>
