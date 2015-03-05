@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="food.css"> <!-- -->
+		<link rel="stylesheet" href="css/styles.css">
+		
 		<title>Egg Plant</title>
 	</head>
 
@@ -19,15 +20,22 @@
 				
 				<div class="Ingredients"><br>	
 				
-				<h3>Ingredients</h3>
+				<h3>Ingredients in my kitchen</h3>
 				<hr>
-				<ul id="IngredientsList">
-				<li><span>Tomato</span></li>
-				<li><span>Potato</span></li>
-				</ul>
-				<input type="text" name="IngredientList"><br><p><p>
-				<button class="buttonPrimary" onclick="">Add</button><p>
 
+
+				<div id = "ingredientBox">
+					<input type = "button" onclick = "removeIngred(this)" value = "bread"> 
+					<input type = "button" onclick = "removeIngred(this)" value = "oil"> 
+					<input type = "button" onclick = "removeIngred(this)" value = "sugar"> 	
+					<input type = "button" onclick = "removeIngred(this)" value = "tomato"> 
+				<!--Citation: I adapted the website's code example to create an onclick function in JS and HTML: http://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button -->
+				</div>
+
+				<input id = "inputIngred" type="text" name="IngredientList">
+				<button id="add" class="buttonPrimary" onclick="">Add</button><p>
+				Tip: Remove ingredients by clicking on them.
+				Add ingredients by typing in the input box above and clicking "add."
 
 
 			</div>
@@ -122,10 +130,12 @@
 
 
 
-
 			</br>
 			</div>
+
 		</nav>
+
+
 		
 		<section>
 
@@ -137,5 +147,6 @@
 
 		<footer>
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
