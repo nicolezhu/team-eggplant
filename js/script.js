@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// add ingredients by clicking 'add-ingredient' button
 	$('#add-ingredient').on('click', function() {
 		var ingredient = $('.ingredients input').val();
-		$('#ingredients-list').append('<li>' + ingredient + '</li>');
+		$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
 		$('.ingredients input').val('');
 	});
 
@@ -10,9 +10,14 @@ $(document).ready(function() {
 	$('.ingredients input').keyup(function(event) {
 		if (event.keyCode == 13) {
 			var ingredient = $('.ingredients input').val();
-			$('#ingredients-list').append('<li>' + ingredient + '</li>');
+			$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
 			$('.ingredients input').val('');
 		}
+	});
+
+	// delete ingredients
+	$('.fa-minus-circle').on('click', function() {
+		$(this).parent().remove();
 	});
 
 	// calories slider
@@ -22,6 +27,15 @@ $(document).ready(function() {
 	$('#cals').on('input', function() {
 		var calories = $('#cals').val();
 		$('#cals-output').val(calories + ' calories');
+	});
+
+	// time slider
+	var time = $('#time-input').val();
+	$('#time-output').val(time + ' min');
+
+	$('#time-input').on('input', function() {
+		var calories = $('#time-input').val();
+		$('#time-output').val(calories + ' min');
 	});
 
 	// show only vegetarian search results
