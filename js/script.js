@@ -2,6 +2,9 @@ $(document).ready(function() {
 	// add ingredients by clicking 'add-ingredient' button
 	$('#add-ingredient').on('click', function() {
 		var ingredient = $('.ingredients input').val();
+		if (ingredient === "") {
+			return;
+		}
 		$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
 		$('.ingredients input').val('');
 	});
@@ -10,6 +13,9 @@ $(document).ready(function() {
 	$('.ingredients input').keyup(function(event) {
 		if (event.keyCode == 13) {
 			var ingredient = $('.ingredients input').val();
+			if (ingredient ==="") {
+				return;
+			}
 			$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
 			$('.ingredients input').val('');
 		}
