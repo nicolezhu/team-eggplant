@@ -2,10 +2,8 @@ $(document).ready(function() {
 	// add ingredients by clicking 'add-ingredient' button
 	$('#add-ingredient').on('click', function() {
 		var ingredient = $('.ingredients input').val();
-		if (ingredient !=== "") {
-			$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
-			$('.ingredients input').val('');
-		}
+		$('#ingredients-list').append('<li>' + ingredient + '<i class="fa fa-minus-circle"></i></li>');
+		$('.ingredients input').val('');
 	});
 
 	// add ingredients by hitting 'enter' key
