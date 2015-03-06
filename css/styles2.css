@@ -1,0 +1,131 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fafafa;
+}
+
+h2 {
+	margin-left: 10px;
+}
+
+h3 {
+	border-bottom: 1px solid #333;
+	padding-bottom: 5px;
+}
+
+.navbar {
+	background-color: #63006A;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #333;
+	background-color: #fde1ff;
+}
+
+.navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	color: #333;
+	background-color: #fde1ff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #fde1ff;
+}
+
+.filters div {
+	padding: 10px 20px;
+	background-color: #fde1ff;
+}
+
+.recipes {
+	overflow: hidden;
+}
+
+.recipe-item {
+	background-color: #fafafa;
+	width: 31%;
+	margin: 10px;
+	float: left;
+}
+
+.recipe-title {
+	margin: 0 0 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.recipe-description {
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+.recipe-item a {
+	color: #63006A;
+}
+
+.ingredients input {
+	padding: 6px 5px;
+}
+
+.fa {
+	float: right;
+}
+
+.fa:hover {
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+input[type=checkbox] {
+	margin-right: 5px;
+}
+
+.weekday {
+	background-color: #fafafa;
+	padding: 10px;
+}
+
+.weekday h4 {
+	font-weight: 600;
+	  text-align: center;
+}
+
+.mealtime {
+	border-bottom: 1px solid #333;
+}
+
+.calendar .recipe-item {
+	width: 100%;
+}
+
+.meal {
+	width: 20%;
+	overflow: hidden;
+}
+
+.lunch {
+	margin-left: 41.66666667%;
+}
+
+.dinner {
+	margin-left: 67.333333%;
+}
