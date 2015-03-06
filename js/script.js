@@ -16,7 +16,9 @@ $(document).ready(function() {
 	});
 
 	// delete ingredients
-	$('.fa-minus-circle').on('click', function() {
+	$(document).on('click', '.fa-minus-circle', function() {
+		console.log('working');
+		console.log(this);
 		$(this).parent().remove();
 	});
 
